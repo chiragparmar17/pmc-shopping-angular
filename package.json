@@ -1,0 +1,15 @@
+{
+  "name": "angular-shopping",
+  "private": true,
+  "version": "0.0.0",
+  "description": "PMC Shopping application for AngularJS",
+  "repository": "https://github.com/angular/angular-shopping",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  }
+}
