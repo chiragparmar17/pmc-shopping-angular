@@ -4,10 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>PMC Shopping Application</title>
-  
+
   <!-- Third Party CSS Libraries -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="bower_components/toastr/toastr.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="app.css" />
 
   <!-- Third Party JS Libraries -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -16,13 +19,20 @@
 
   <!-- Angular Files -->
   <script src="app.module.js"></script>
+
+  <!-- Header Module -->
   <script src="header/header.module.js"></script>
   <script src="header/header.controller.js"></script>
+
+  <!-- Product List Module -->
+  <script src="product-list/product-list.module.js"></script>
+  <script src="product-list/product-list.controller.js"></script>
 
 </head>
 
 <body ng-app="shoppingApp">
   <div ng-include="'header/header.tpl.html'"></div>
+  <div ng-include="'product-list/product-list.tpl.html'"></div>
   <!-- <div class="view-container">
     <div class="view-frame"></div>
   </div> -->

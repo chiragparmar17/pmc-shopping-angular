@@ -1,0 +1,16 @@
+<div class="container" ng-controller="ProductListController" ng-init="init()">
+    <div class="row">
+        <div class="col-md-3" ng-repeat="product in products">
+            <div class="product-summary">
+                <img class="center-block product-img" ng-src="images/product-image.png">
+                <div class="product-info">
+                    <ul class="list-unstyled text-center">
+                        <li><small>{{product.sku}}</small></li>
+                        <li><h5 class="text-primary">{{product.title}}</h5></li>
+                        <li><h6>{{product.price}}</h6></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
