@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module("shoppingApp", []);
+angular.module("shoppingApp", ["header"]);

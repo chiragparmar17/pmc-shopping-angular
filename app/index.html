@@ -16,14 +16,16 @@
 
   <!-- Angular Files -->
   <script src="app.module.js"></script>
+  <script src="header/header.module.js"></script>
+  <script src="header/header.controller.js"></script>
 
 </head>
 
 <body ng-app="shoppingApp">
-  <h1>{{'Welcome to PMC Shopping Application'}}</h1>
-  <div class="view-container">
+  <div ng-include="'header/header.tpl.html'"></div>
+  <!-- <div class="view-container">
     <div class="view-frame"></div>
-  </div>
+  </div> -->
 </body>
 
 </html>
